@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <h3>list</h3>
+    <p class="gofuck"></p> -->
+    <div class="backdrop">
+      <div class="modal">
+        <div class="headcountry"><h2 class="modalCountryName">Country</h2></div>
+
+        <div class="information">
+          <div class="modal-left modalcol">
+            <p class="modalpleft">Cases</p>
+            <h4 class="modalTodayCases"></h4>
+            <h4 class="modalTotalCases"></h4>
+          </div>
+          <div class="modal-cenetr modalcol">
+            <p class="modalpleft">Recovered</p>
+            <h4 class="modalTodayRecovered"></h4>
+
+            <h4 class="modalTotalRecovered"></h4>
+          </div>
+          <div class="modal-right modalcol">
+            <p class="modalpleft">Deaths</p>
+            <h4 class="modalTodayDeaths"></h4>
+
+            <h4 class="modalTotalDeaths"></h4>
+          </div>
+        </div>
+        <div class="modalInfo">
+          <p class="info-active"></p>
+          <p class="info-critical"></p>
+          <p class="info-test"></p>
+          <p class="info-poulation"></p>
+          <p class="info-continent"></p>
+          <p class="info-updated"></p>
+        </div>
+        <div id="closeBtn"><div class="closeButton">Exit</div></div>
+      </div>
+    </div>
+    <div class="header">
+      <nav class="navbar">
+        <div class="list">
+          <p class="left">
+            <img class="icon" src="img/coronavirus.png" />COVID Meter
+          </p>
+          <div class="background"></div>
+          <p class="right"><span>About</span></p>
+          <p class="right"><span>Countries</span></p>
+          <p class="right"><span>COVID-19</span></p>
+        </div>
+      </nav>
+      <div class="tilldate">
+        <h2>Coronavirus Cases:</h2>
+        <h1 class="tillcases"></h1>
+        <h2>Deaths:</h2>
+        <h1 class="tilldeaths"></h1>
+        <h2>Recovered:</h2>
+        <h1 class="tillrecovered"></h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="youtube">
+        <div class="searchbar">
+          <div class="sboxx">
+            <input
+              placeholder="Search by your country"
+              list="searchlist1"
+              type="text"
+              class="readinput"
+            />
+            <datalist class="searchlist" id="searchlist1"></datalist>
+          </div>
+          <div class="submitbtn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+            </svg>
+          </div>
+        </div>
+        <div class="videos">
+          <iframe
+            frameborder="0"
+            class="youtubevideo"
+            src="https://www.youtube.com/embed/i0ZabxXmH4Y"
+          >
+          </iframe>
+          <iframe
+            frameborder="0"
+            class="youtubevideo"
+            src="https://www.youtube.com/embed/PSnSo9kYlH4"
+          >
+          </iframe>
+          <iframe
+            frameborder="0"
+            class="youtubevideo"
+            src="https://www.youtube.com/embed/NMre6IAAAiU"
+          >
+          </iframe>
+        </div>
+      </div>
+      <div class="taable">
+        <table class="table-country">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Country</th>
+              <th>Total Cases</th>
+              <th>Todays Cases</th>
+              <th>Total Recovered</th>
+              <th>Todays Recovered</th>
+              <th>Total Death</th>
+              <th>Todays Death</th>
+            </tr>
+          </thead>
+          <tbody class="tbooty"></tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <p>Made in India💖</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
